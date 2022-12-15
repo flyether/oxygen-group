@@ -1,0 +1,11 @@
+
+.container {
+  padding: .3rem;
+}
+
+.list {
+  display: flex;
+
+  gap: .5rem;
+}
+

@@ -1,4 +1,6 @@
 Зависимости
+npm i
+ну или
 npm init -y
 npm i -D typescript
 Скорее всего этого хватит

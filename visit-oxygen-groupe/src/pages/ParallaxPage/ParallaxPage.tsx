@@ -11,7 +11,7 @@ const ParallaxPage = () => {
       <Parallax ref={parallax} pages={5}  >
         <ParallaxLayer
           offset={0}
-          speed={0.5}
+          speed={0.1}
           style={{ backgroundColor: "#e66465" }}
         >
           <Link to="/" >
@@ -22,7 +22,7 @@ const ParallaxPage = () => {
 
         <ParallaxLayer
           offset={1}
-          speed={0.5}
+          speed={0.1}
           style={{ backgroundColor: "#232946" }}
         ><Link to="/" >
             главная
@@ -31,7 +31,7 @@ const ParallaxPage = () => {
 
         <ParallaxLayer
           offset={2}
-          speed={0.5}
+          speed={0.1}
           style={{ backgroundColor: "#8bd3dd" }}
         > <Link to="/" >
             главная
@@ -40,7 +40,7 @@ const ParallaxPage = () => {
 
         <ParallaxLayer
           offset={3}
-          speed={0.5}
+          speed={0.1}
           style={{ backgroundColor: "#9198e5" }}
         > <Link to="/" >
             главная
@@ -49,7 +49,7 @@ const ParallaxPage = () => {
 
         <ParallaxLayer
           offset={4}
-          speed={0.5}
+          speed={0.1}
           style={{ backgroundColor: "gold" }}
         >
           <Link to="/" >

@@ -1,4 +1,11 @@
-Зависимости, которые устоновила
+Зависимости
+npm init -y
+npm i -D typescript
+Скорее всего этого хватит
+
+но возможно что-то из ниже перечисленного\
+npm i react
+
 npx create-react-app visit-oxygen-groupe --template typescript
 npm i -D typescript
 npm i -D eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser

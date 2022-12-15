@@ -1,3 +1,15 @@
+Зависимости, которые устоновила
+npx create-react-app visit-oxygen-groupe --template typescript
+npm i -D typescript
+npm i -D eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser
+npm i @react-spring/parallax
+
+npm i react-router-dom
+npm i react-css-modules
+npm i react-hook-form
+npm install eslint-plugin-react-hooks --save-dev
+npm install --save-dev --save-exact prettier
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

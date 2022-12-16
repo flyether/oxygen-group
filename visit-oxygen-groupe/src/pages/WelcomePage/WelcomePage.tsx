@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styles from './WelcomePage.module.css'
 const WelcomePage = () => {
   return (
-    <main className="main">
+    <main className={styles.container}>
    <Header />
    <Link to="/parallax" className={styles.link}>
             Слайдер

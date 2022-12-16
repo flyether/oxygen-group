@@ -18,6 +18,14 @@ const GlobalRoute = () => {
             </ErrorBoundary>
           }
         />
+          <Route
+          path="main"
+          element={
+            <ErrorBoundary>
+              <ParallaxPage />
+            </ErrorBoundary>
+          }
+        />
         <Route
           path="contacts"
           element={

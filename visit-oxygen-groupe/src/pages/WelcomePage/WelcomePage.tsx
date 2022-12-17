@@ -6,12 +6,12 @@ import Contacts from "../../components/Contacts";
 const WelcomePage = () => {
   return (
     <main className={styles.container}>
-   <Header />
+  
    <div className={styles.divColum}>
 
-    <div className={styles.red}></div>
+    <div className={styles.red}> <Header /></div>
    <ParallaxPage />
-   
+
    <Contacts />
    </div>
    

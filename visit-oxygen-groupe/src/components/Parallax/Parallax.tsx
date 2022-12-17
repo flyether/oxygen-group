@@ -1,7 +1,6 @@
 import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax';
 import { useRef } from 'react';
 import { Link } from 'react-router-dom';
-
 import styles from './styles.module.css'
 
 

@@ -7,19 +7,17 @@ import ParallaxPage from '../../pages/ParallaxPage';
 
 const GlobalRoute = () => {
   return (
-    <BrowserRouter   basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
-        <Route path="/" element={<WelcomePage />} />
-        <Route
-          path="parallax"
+        <Route path="/"
           element={
             <ErrorBoundary>
-              <ParallaxPage />
+              <WelcomePage />
             </ErrorBoundary>
           }
         />
-          <Route
-          path="main"
+        <Route
+          path="portfolio"
           element={
             <ErrorBoundary>
               <ParallaxPage />
@@ -27,7 +25,7 @@ const GlobalRoute = () => {
           }
         />
         <Route
-          path="contacts"
+          path="news"
           element={
             <ErrorBoundary>
               <ContactsPage />

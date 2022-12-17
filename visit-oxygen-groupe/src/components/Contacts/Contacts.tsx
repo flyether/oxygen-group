@@ -6,6 +6,7 @@ const Contacts = () => {
 
   return (
     <div className={styles.container}>
+      <h1>тут форма</h1>
 
     </div>
   );

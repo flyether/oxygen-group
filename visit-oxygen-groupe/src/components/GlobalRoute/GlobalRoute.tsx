@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import WelcomePage from '../../pages/WelcomePage';
 import ErrorPage from '../../pages/ErrorPage';
-import ContactsPage from '../../pages/ContactsPage';
+import ContactsPage from '../Contacts';
 import ErrorBoundary from '../../utils/ErrorBoundary';
-import ParallaxPage from '../../pages/ParallaxPage';
+import ParallaxPage from '../Parallax';
 
 const GlobalRoute = () => {
   return (

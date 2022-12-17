@@ -6,10 +6,13 @@ import ParallaxPage from "../../components/Parallax/Parallax";
 import Contacts from "../../components/Contacts";
 const WelcomePage = () => {
   return (
-    <main className="main">
+    <main className={styles.container}>
    <Header />
+   <div className={styles.divColum}>
    <ParallaxPage />
    <Contacts />
+   </div>
+  
     </main>
   );
 };

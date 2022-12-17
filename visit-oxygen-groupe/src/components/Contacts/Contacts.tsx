@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 
-const ContactsPage = () => {
+const Contacts = () => {
 
   return (
     <div className="main">
@@ -13,4 +13,4 @@ const ContactsPage = () => {
   );
 };
 
-export default ContactsPage;
+export default Contacts;

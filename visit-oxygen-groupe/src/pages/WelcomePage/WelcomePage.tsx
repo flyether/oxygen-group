@@ -8,7 +8,10 @@ const WelcomePage = () => {
     <main className={styles.container}>
    <Header />
    <div className={styles.divColum}>
+
+    <div className={styles.red}></div>
    <ParallaxPage />
+   
    <Contacts />
    </div>
    

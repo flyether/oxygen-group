@@ -1,6 +1,8 @@
 import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax';
 import { useRef } from 'react';
 import { Link } from 'react-router-dom';
+import Contacts from "../Contacts";
+import Main from "../Main";
 import styles from './styles.module.css'
 
 
@@ -8,9 +10,12 @@ const ParallaxPage = () => {
   const parallax = useRef<IParallax>(null!)
   return (
     <div className={styles.container}>
-      <Parallax ref={parallax} pages={5}  >
-        <ParallaxLayer
-          offset={0}
+      <Parallax ref={parallax} pages={7}  >
+      <ParallaxLayer offset={0} speed={0} >
+        <Main />
+        </ParallaxLayer>
+      <ParallaxLayer
+          offset={1}
           speed={0}
           className={styles.slide}
         > <div className={styles.block2}>
@@ -37,7 +42,7 @@ const ParallaxPage = () => {
         </ParallaxLayer>
 
         <ParallaxLayer
-          offset={1}
+          offset={2}
           speed={0}
           className={styles.slide}
         >
@@ -65,7 +70,7 @@ const ParallaxPage = () => {
         </ParallaxLayer>
 
         <ParallaxLayer
-          offset={2}
+          offset={3}
           speed={0}
           className={styles.slide}
         >
@@ -91,7 +96,7 @@ const ParallaxPage = () => {
         </ParallaxLayer>
 
         <ParallaxLayer
-          offset={3}
+          offset={4}
           speed={0}
           className={styles.slide}
         >
@@ -110,7 +115,7 @@ const ParallaxPage = () => {
         </ParallaxLayer>
 
         <ParallaxLayer
-          offset={4}
+          offset={5}
           speed={0}
           className={styles.slide}
         >
@@ -129,7 +134,7 @@ const ParallaxPage = () => {
             </div>
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.4} className={styles.cloud}>
+        <ParallaxLayer offset={1} speed={0.4} className={styles.cloud}>
           <img
             alt="cloud"
             src="https://freepngimg.com/thumb/cloud/7-cloud-png-image.png"
@@ -141,7 +146,7 @@ const ParallaxPage = () => {
             style={{ display: "block", width: "30%", marginLeft: "25%" }}
           />
         </ParallaxLayer>
-        <ParallaxLayer offset={1} speed={0.8} className={styles.cloud}>
+        <ParallaxLayer offset={2} speed={0.2} className={styles.cloud}>
           <img
             alt="cloud"
             src="https://freepngimg.com/thumb/cloud/7-cloud-png-image.png"
@@ -153,7 +158,7 @@ const ParallaxPage = () => {
             style={{ display: "block", width: "40%", marginLeft: "15%" }}
           />
         </ParallaxLayer>
-        <ParallaxLayer offset={2} speed={0.5} className={styles.cloud}>
+        <ParallaxLayer offset={3} speed={0.8} className={styles.cloud}>
           <img
             alt="cloud"
             src="https://freepngimg.com/thumb/cloud/7-cloud-png-image.png"
@@ -170,7 +175,7 @@ const ParallaxPage = () => {
             style={{ display: "block", width: "30%", marginRight: "20%" }}
           />
         </ParallaxLayer>
-        <ParallaxLayer offset={3} speed={0.8} className={styles.cloud}>
+        <ParallaxLayer offset={4} speed={0.8} className={styles.cloud}>
           <img
             alt="cloud"
             src="https://freepngimg.com/thumb/cloud/7-cloud-png-image.png"
@@ -182,7 +187,7 @@ const ParallaxPage = () => {
             style={{ display: "block", width: "20%", marginLeft: "5%" }}
           />
         </ParallaxLayer>
-        <ParallaxLayer offset={4} speed={1} className={styles.cloud}>
+        <ParallaxLayer offset={5} speed={0.9} className={styles.cloud}>
           <img
             alt="cloud"
             src="https://freepngimg.com/thumb/cloud/7-cloud-png-image.png"
@@ -199,7 +204,12 @@ const ParallaxPage = () => {
             style={{ display: "block", width: "30%", marginRight: "55%" }}
           />
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0} >
+        <ParallaxLayer offset={1} speed={0} >
+          <Link to="/" >
+            <div className={styles.button}></div>
+          </Link>
+        </ParallaxLayer>
+        <ParallaxLayer offset={4} speed={0} >
           <Link to="/" >
             <div className={styles.button}></div>
           </Link>
@@ -214,15 +224,13 @@ const ParallaxPage = () => {
             <div className={styles.button}></div>
           </Link>
         </ParallaxLayer>
-        <ParallaxLayer offset={1} speed={0} >
+        <ParallaxLayer offset={5} speed={0} >
           <Link to="/" >
             <div className={styles.button}></div>
           </Link>
         </ParallaxLayer>
-        <ParallaxLayer offset={4} speed={0} >
-          <Link to="/" >
-            <div className={styles.button}></div>
-          </Link>
+        <ParallaxLayer offset={6} speed={0} >
+        <Contacts />
         </ParallaxLayer>
       </Parallax>
     </div>

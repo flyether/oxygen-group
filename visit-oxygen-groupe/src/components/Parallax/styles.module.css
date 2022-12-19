@@ -5,6 +5,8 @@
    display: flex;
    align-items: center;
    color: #000;
+   margin: 0 auto;
+   padding: 5vw;
 }
 .container{
    width: 100vw;
@@ -13,7 +15,7 @@
    align-items: center;
 }
 .block{
-   gap: 2%;
+   gap: 0 2%;
    display: flex;
    align-items: center;
 }
@@ -28,8 +30,8 @@
 }
 .il{
    margin: 1% auto;
-   width: 300px;
-   height: 300px;
+   width: 30vw;
+   height: 30vh;
    border: 2px solid slategray;
 }
 
@@ -43,7 +45,7 @@
    border-color: #77ACF1;
 }
 .textContainer{
-   width: 400px;
-   height: 300px;
+   width: 40vw;
+   height: 30vh;
 margin: 1% auto;
 }

@@ -2,5 +2,29 @@
   background: rgba(119, 172, 241, 1);
   width: 100vw;
   height: 100vh;
-  padding: .3rem;
+  margin: 5vh, 3vw;
+}
+
+.twoDiv{
+  flex-direction: column;
+  width: 30vw;
+  height: 100vh;
+  color: #ffffff;
+}
+
+.button{
+  
+  justify-content: center;
+  align-items: center;
+  padding: 15px 25px;
+  border: 0;
+  font-size: larger;
+  width: 152px;
+  height: 54px;
+  color: #77ACF1;
+  
+  background: #FFFFFF;
+  border-radius: 10px;
+  
+
 }

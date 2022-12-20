@@ -1,15 +1,12 @@
 import { createSlice } from '@reduxjs/toolkit';
-import {  IUser } from '../../models/interfaces';
-
+import { IUser } from '../../models/interfaces';
 
 let initialState: IUser = {
   username: '',
- age: null,
- hobbies: [],
+  email: '',
+  description: '',
+  phone:''
 };
-
-
-
 
 const userSlice = createSlice({
   name: 'user',
@@ -26,8 +23,9 @@ const userSlice = createSlice({
  
     removeUser(state) {
       state.username = '';
-      state.age = null;
-      state.hobbies = '';
+      state.email = null;
+      state.description = '';
+      state.phone = '';
     },
   },
 });

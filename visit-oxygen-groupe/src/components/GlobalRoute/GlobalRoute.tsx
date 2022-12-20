@@ -7,7 +7,7 @@ import ParallaxPage from '../Parallax';
 
 const GlobalRoute = () => {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+
       <Routes>
         <Route path="/"
           element={
@@ -34,7 +34,7 @@ const GlobalRoute = () => {
         />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
-    </BrowserRouter>
+    
   );
 };
 export default GlobalRoute;

@@ -1,6 +1,9 @@
 
-
+body{
+   margin: auto;
+}
 .slide{
+ 
    background-color:rgb(214 240 255);
    display: flex;
    align-items: center;
@@ -14,6 +17,10 @@
    position: relative;
    align-items: center;
 }
+.slideContainer{
+   max-width: 1280px;
+}
+
 .block{
    gap: 0 2%;
    display: flex;
@@ -36,14 +43,26 @@
 }
 
 .button{
-   margin-top: 40%;
-   margin-left: 90%;
-   width: 30px;
-   height: 30px;
+   padding:10px;
+   border-radius:100%;
+  position:relative;
+  font-size:40px;
+   width: 76px;
+   height: 76px;
    border-radius: 50%;
+   color:#fff; 
    background: #77ACF1;
    border-color: #77ACF1;
+   top:75%;
+   left:75%;
+   
 }
+.button:before{
+   position:absolute;
+   top:25%;
+   left:45%;
+      content: url('../../assets/svg/Vector.svg');
+   }
 .textContainer{
    width: 40vw;
    height: 30vh;

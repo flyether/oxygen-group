@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import styles from './errorMod.module.scss';
+import styles from './errorMod.module.css';
 
 interface IModalProps {
   children: React.ReactNode | JSX.Element;

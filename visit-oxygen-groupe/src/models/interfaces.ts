@@ -12,8 +12,9 @@ cd: string;
 
  export interface IUser {
   username?: string;
-  age?: string | number | null;
-  hobbies?: string | string[];
+  email?: string | number | null;
+  phone?: string | number;
+  description?: string | string[];
  }
 
 

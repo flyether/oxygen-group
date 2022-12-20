@@ -1,13 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styles from './Contacts.module.css'
+
+import  Input from './';
 
 const Contacts = () => {
 
   return (
     <div className={styles.container}>
-      <h1>тут форма</h1>
+      <div className={styles.twoDiv}>
+        <h1>Связаться
+          с нами</h1>
+      
+          <button className={styles.button}>Отправить</button>
+      </div>
+      <div className={styles.twoDiv}>
 
+      </div>
     </div>
   );
 };

@@ -1,13 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { IInitialState } from '../../models/iterfaces';
+import {  IUser } from '../../models/interfaces';
 
 
-let initialState: IInitialState = {
-  name: '',
-  login: '',
-  token: '',
-  id: '',
-  allUsers: [],
+let initialState: IUser = {
+  username: '',
+ age: null,
+ hobbies: [],
 };
 
 
@@ -18,34 +16,22 @@ const userSlice = createSlice({
   initialState,
   reducers: {
     setName(state, action) {
-      state.name = action.payload;
+      state.username = action.payload;
     },
-    setLogin(state, action) {
-      state.login = action.payload;
-    },
-    setAllUsers(state, action) {
-      state.allUsers = action.payload;
-    },
+
+
     setUser(state, action) {
       return { ...action.payload };
     },
-    setToken(state, action) {
-      state.token = action.payload;
-    },
-    setId(state, action) {
-      state.id = action.payload;
-    },
+ 
     removeUser(state) {
-      state.name = '';
-      state.login = '';
-      state.token = '';
-      state.id = '';
-      state.password = '';
-      state.allUsers = [];
+      state.username = '';
+      state.age = null;
+      state.hobbies = '';
     },
   },
 });
 
-export const { setToken, setUser, setName, removeUser, setId, setAllUsers, setLogin } =
+export const {  setUser, setName, removeUser,  } =
   userSlice.actions;
 export default userSlice.reducer;

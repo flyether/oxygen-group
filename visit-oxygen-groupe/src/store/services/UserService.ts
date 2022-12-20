@@ -1,5 +1,4 @@
-
-import { IUser } from '../../models/iterfaces';
+import { IUser } from '../../models/interfaces';
 import { setId } from '../slices/UserSlice';
 import { commonApi } from './common.api';
 

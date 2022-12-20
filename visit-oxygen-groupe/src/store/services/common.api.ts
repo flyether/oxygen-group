@@ -6,12 +6,11 @@ import {
   FetchBaseQueryMeta,
 } from '@reduxjs/toolkit/query/react';
 
-import { RootState } from '../store';
-import { IError } from '../../models/iterfaces';
+// import { RootState } from '../store';
+import { IError } from '../../models/interfaces';
 
 // TODO move to constants.
 export const BASE_URL = 'https://pma-backend-2-0.onrender.com';
-// export const BASE_URL = 'https://protected-dusk-84289.herokuapp.com';
 
 export const commonApi = createApi({
   reducerPath: 'api',
@@ -25,6 +24,6 @@ export const commonApi = createApi({
     Record<string, unknown>,
     FetchBaseQueryMeta
   >,
-  tagTypes: ['User', ],
+  tagTypes: ['User' ],
   endpoints: (_) => ({}),
 });

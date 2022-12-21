@@ -220,7 +220,7 @@ const ParallaxPage = () => {
             style={{ display: "block", width: "30%", marginRight: "55%" }}
           />
         </ParallaxLayer>
-        <ParallaxLayer offset={1} speed={0} >
+        {/* <ParallaxLayer offset={1} speed={0} >
           <Link to="/" >
             <div className={styles.button}></div>
           </Link>
@@ -244,7 +244,7 @@ const ParallaxPage = () => {
           <Link to="/" >
             <div className={styles.button}></div>
           </Link>
-        </ParallaxLayer>
+        </ParallaxLayer> */}
         <ParallaxLayer offset={6} speed={0} >
           <Contacts />
         </ParallaxLayer>

@@ -36,15 +36,43 @@
   justify-content: center;
   align-items: center;
   padding: 0 25px;
+  margin: auto;
   border: 0;
   font-size: larger;
   width: 152px;
   height: 54px;
   color: #77ACF1;
+  background: white;
+  border-radius: 10px;
+}
+.button[disabled]:hover {
+  background-color:  #EEEEEE;
+  color: white;
+  border: red solid 1px ;
+}
+.button:disabled {
+  background-color:  #EEEEEE;
+  color: white;
+  opacity: 1;
+}
+.button:hover {
+  background-color:  #D6F0FF;;
+  color: black;
+  
+}
+.loading{
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+  margin: auto;
+  border: 0;
+  font-size: larger;
+  width: 152px;
+  height: 54px;
+  color: #77acf100;
   background: #FFFFFF;
   border-radius: 10px;
 }
-
 input {
   outline-color: #5f9ef0;
   background-color:  #77ACF1;
@@ -53,7 +81,9 @@ input {
   padding: 10px 20px;
 
 }
-
+.inputError{
+  color: red; 
+}
 textarea {
   outline-color: #5f9ef0;
   color: white;
@@ -61,14 +91,14 @@ textarea {
   height: 30vh;
   padding: 10px 20px;
   box-sizing: border-box;
-  border: 2px solid white;
-  border-radius: 4px;
+  border: 1px solid white;
+
   background-color: #77ACF1;
   resize: none;
   font-size: larger;
 }
 ::placeholder {
-  color:white;
+  color:rgba(221, 221, 221, 1);
 }
 
 
@@ -85,4 +115,43 @@ select:-webkit-autofill:focus {
   -webkit-text-fill-color: white;
   -webkit-box-shadow: 0 0 0px 1000px #5f9ef0 inset;
   transition: background-color 5000s ease-in-out 0s;
+}
+
+.footer-svg {
+  width: 30px;
+  height: 30px;
+ 
+}
+
+.emailSvg {
+  background: url(../../assets/svg/mail.svg) no-repeat center center;
+  width: 30px;
+  height: 30px;
+  margin-right: 2vw;
+}
+
+.telSvg {
+  margin-right: 2vw;
+  width: 30px;
+  height: 30px;
+  background: url(../../assets/svg/phone.svg) no-repeat center center;
+}
+
+.telegramSvg {
+  margin-right: 2vw;
+  width: 30px;
+  height: 30px;
+  background: url(../../assets/svg/telegram.svg) no-repeat center center;
+}
+.contacts{
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.contactsLine{
+  display: flex;
+  flex-direction: row;
+}
+.Oxygen{
+  margin-top: 4vh;
 }

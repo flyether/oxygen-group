@@ -16,20 +16,20 @@ const Contacts = () => {
         <div> <h2>Контакты</h2></div>
         <div className={styles.contacts}>
         <div className={styles.contactsLine}>
-          <a href="mailto:test@test.ru">
+          <a href="mailto:info@oxy-group.ru">
             <div className={styles.emailSvg}></div>
           </a> 
-           <span > test@test.ru</span>
+           <span > info@oxy-group.ru</span>
           </div>
           <div className={styles.contactsLine}>
             <div className={styles.telSvg} ></div>
-            <span > +7 (494) 322-22-33</span>
+            <span > +7 (901) 779-37-88</span>
           </div>
           <div className={styles.contactsLine}>
             <div className={styles.telegramSvg } ></div>
             <span > @ewre</span>
           </div>
-          <span >г. Москва, ул. Лермонтова д. 12</span>
+          <span >г. Москва</span>
         </div>
         <div  className={styles.Oxygen}>(C) Oxygen Grope 2022. Все права защищены.</div>
       </div>

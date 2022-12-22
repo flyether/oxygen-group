@@ -9,14 +9,15 @@ import {
 import { IError, IUser } from '../../models/interfaces';
 
 // TODO move to constants.
-export const BASE_URL = 'http://exemple.com';
+export const BASE_URL = 'http://localhost:5000';
 
 export const commonApi = createApi({
   reducerPath: 'api',
   baseQuery: fetchBaseQuery({
     baseUrl: BASE_URL,
-    prepareHeaders: (headers, { getState }) => {
-      headers.set('Authorization', 'Content-Type')
+
+    prepareHeaders: (headers) => {
+      headers.set("Content-Type", "application/json");
       return headers;
     },
   }) as BaseQueryFn<
@@ -30,7 +31,7 @@ export const commonApi = createApi({
   endpoints: (build) => ({
     regUser: build.mutation< IUser, IUser>({
       query: (userInfo) => ({
-        url: `/api/users`,
+        url: `/requests`,
         method: 'POST',
         body: userInfo,
       }),

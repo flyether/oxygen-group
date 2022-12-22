@@ -6,10 +6,12 @@
   justify-content: center;
 }
  .logo{
-  margin-top: 5vh;
-  width: 20vw;
+  background-size: contain;
+  margin: 5vh 0 15vh;
+  width: 27vw;
   height: 20vh;
-  border: solid 1px #FFFFFF;
+  background: url(../../assets/svg/logo.svg) no-repeat center center;
+  
  }
 
 .formContainer{
@@ -69,7 +71,7 @@
   font-size: larger;
   width: 152px;
   height: 54px;
-  color: #77acf100;
+  color: transparent;
   background: #FFFFFF;
   border-radius: 10px;
 }
@@ -154,4 +156,22 @@ select:-webkit-autofill:focus {
 }
 .Oxygen{
   margin-top: 4vh;
+}
+
+.errorModal {
+  position: absolute;
+  bottom: 0%;
+  right: 0;
+  width: 231px;
+  height: 61px;
+  background-color: #E95858;;
+  border-radius: 10px 10px 0px 0px;
+}
+.errorMessage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
 }

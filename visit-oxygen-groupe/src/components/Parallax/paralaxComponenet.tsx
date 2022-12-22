@@ -1,7 +1,11 @@
 import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax';
 import { useRef } from 'react';
-import { Link } from 'react-router-dom';
 import Contacts from "../Contacts";
+import Step1 from '../Contacts/Steps.tsx/Step1';
+import Step2 from '../Contacts/Steps.tsx/Step2';
+import Step3 from '../Contacts/Steps.tsx/Step3';
+import Step4 from '../Contacts/Steps.tsx/Step4';
+import Step5 from '../Contacts/Steps.tsx/Step5';
 import Main from "../Main";
 import styles from './styles.module.css'
 
@@ -21,33 +25,7 @@ const ParallaxPage = () => {
           speed={0}
           className={styles.slide}
         >
-          <div className={styles.slideContainer}>
-            <div className={styles.block2}>
-              <h2>Аналитика и оценка проекта</h2>
-              <div className={styles.block}>
-                <div className={styles.il} >Иллюстрация</div>
-                <div className={styles.textContainer}>
-
-                  <h4>Собираем аналитику и погружаемся
-                    в контекст - исследуем рынок, анализируем конкурентов.
-                    Создаем пользовательские сценарии
-                    и оцениваем объем работы на основе пожеланий и требований клиента.
-                    <br />
-                    За счет этого мы предусматриваем все проблемные моменты
-                    и возможные изменения.<br />
-                    <ul>
-                      <li> Агрегация требований</li>
-                      <li>Прототипирование</li>
-                      <li>Техническое задание</li>
-                    </ul>
-
-
-                  </h4>
-
-                </div>
-              </div>
-            </div>
-          </div>
+          <Step1 />
         </ParallaxLayer>
 
         <ParallaxLayer
@@ -55,30 +33,7 @@ const ParallaxPage = () => {
           speed={0}
           className={styles.slide}
         >
-          <div className={styles.slideContainer}>
-            <div className={styles.block2}>
-              <h2>UX/UI дизайн</h2>
-              <div className={styles.block}>
-                <div className={styles.il} >Иллюстрация</div>
-                <div className={styles.textContainer}>
-
-                  <h4>Начинаем с проработки внутренней логики - создаем майндмэп.
-                    После переносим ее в черно-белый макет для согласования логики.
-                    <br />
-                    Когда логика проработана, прорисовываем стили на нескольких экранах, чтобы согласовать общий вид будущего приложения.
-                    <br />
-                    Финализируем дизайн и после
-                    отдаем в разработку.<br />
-                    <ul>
-                      <li>Сбор референсов</li>
-                      <li>Отбор креативных идей</li>
-                      <li>Дизайн концепция</li>
-                    </ul>
-                  </h4>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Step2 />
         </ParallaxLayer>
 
         <ParallaxLayer
@@ -86,27 +41,7 @@ const ParallaxPage = () => {
           speed={0}
           className={styles.slide}
         >
-          <div className={styles.block2}>
-            <h2>Разработка</h2>
-            <div className={styles.block}>
-              <div className={styles.il} >Иллюстрация</div>
-              <div className={styles.textContainer}>
-                <h4>Начинаем с проработки внутренней логики - создаем майндмэп.
-                  После переносим ее в черно-белый макет для согласования логики.
-                  <br />
-                  Когда логика проработана, прорисовываем стили на нескольких экранах, чтобы согласовать общий вид будущего приложения.
-                  <br />
-                  Финализируем дизайн и после
-                  отдаем в разработку.<br />
-                  <ul>
-                    <li> Сбор референсов</li>
-                    <li>Отбор креативных идей</li>
-                    <li>Дизайн концепция</li>
-                  </ul>
-                </h4>
-              </div>
-            </div>
-          </div>
+          <Step3 />
         </ParallaxLayer>
 
         <ParallaxLayer
@@ -114,20 +49,7 @@ const ParallaxPage = () => {
           speed={0}
           className={styles.slide}
         >
-          <div className={styles.block2}>
-            <h2>Тестирование</h2>
-            <div className={styles.block}>
-              <div className={styles.il} >Иллюстрация</div>
-              <div className={styles.textContainer}>
-                <h4>Чтобы мобильные приложения работали без сбоев, а баги фиксились во время. Мы тестируем все приложения в ручную.
-                  <ul>
-                    <li>Ручное тестирование</li>
-                    <li>Автоматическое тестирование</li>
-                  </ul>
-                </h4>
-              </div>
-            </div>
-          </div>
+          <Step4 />
         </ParallaxLayer>
 
         <ParallaxLayer
@@ -135,21 +57,9 @@ const ParallaxPage = () => {
           speed={0}
           className={styles.slide}
         >
-          <div className={styles.block2}>
-            <h2>Интеграции и релиз проекта</h2>
-            <div className={styles.block}>
-              <div className={styles.il} >Иллюстрация</div>
-              <div className={styles.textContainer}>
-                <h4>Мы знаем все тонкости публикации
-                  в AppStore и Google Play и всегда доводим релиз до конца.
-                  <br />
-                  После выхода в релиз поддерживаем и развиваем продукт: добавляем новые фичи и фиксим баги.
-                  <br />
-                  Интеграция готовых модулей и сервисов.</h4>
-              </div>
-            </div>
-          </div>
+          <Step5 />
         </ParallaxLayer>
+
         <ParallaxLayer offset={1} speed={0.2} className={styles.cloud}>
           <img
             alt="cloud"

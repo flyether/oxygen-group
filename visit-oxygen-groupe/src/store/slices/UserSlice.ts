@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 import { IUser } from '../../models/interfaces';
 
 let initialState: IUser = {
-  username: '',
+  name: '',
   email: '',
   description: '',
   phone:''
@@ -13,7 +13,7 @@ const userSlice = createSlice({
   initialState,
   reducers: {
     setName(state, action) {
-      state.username = action.payload;
+      state.name = action.payload;
     },
 
 
@@ -22,7 +22,7 @@ const userSlice = createSlice({
     },
  
     removeUser(state) {
-      state.username = '';
+      state.name = '';
       state.email = null;
       state.description = '';
       state.phone = '';

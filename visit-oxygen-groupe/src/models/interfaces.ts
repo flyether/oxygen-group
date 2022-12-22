@@ -11,7 +11,8 @@ cd: string;
  }
 
  export interface IUser {
-  username?: string;
+  id?:string | number;
+  name?: string;
   email?: string | number | null;
   phone?: string | number;
   description?: string | string[];

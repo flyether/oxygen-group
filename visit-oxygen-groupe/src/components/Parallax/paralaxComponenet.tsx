@@ -1,6 +1,5 @@
 import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax';
 import { useRef } from 'react';
-import { Link } from 'react-router-dom';
 import Contacts from "../Contacts";
 import Step1 from '../Contacts/Steps.tsx/Step1';
 import Step2 from '../Contacts/Steps.tsx/Step2';

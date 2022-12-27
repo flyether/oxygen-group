@@ -31,7 +31,7 @@ const Contacts = () => {
           </div>
           <span >г. Москва</span>
         </div>
-        <div  className={styles.Oxygen}>(C) Oxygen Grope 2022. Все права защищены.</div>
+        <div  className={styles.Oxygen}>(C) Oxygen Grop 2022. Все права защищены.</div>
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ import {
   FetchBaseQueryMeta,
 } from '@reduxjs/toolkit/query/react';
 
-import { IError, IUser } from '../../models/interfaces';
+import { IError, IUser, IСaptcha, IСaptchaRes } from '../../models/interfaces';
 
 // TODO move to constants.
 export const BASE_URL = 'http://localhost:5000';
@@ -34,6 +34,13 @@ export const commonApi = createApi({
         url: `/requests`,
         method: 'POST',
         body: userInfo,
+      }),
+    }),
+    captcha: build.mutation< IСaptchaRes, IСaptcha>({
+      query: (token) => ({
+        url: `/captcha`,
+        method: 'POST',
+        body: token,
       }),
     }),
   }),

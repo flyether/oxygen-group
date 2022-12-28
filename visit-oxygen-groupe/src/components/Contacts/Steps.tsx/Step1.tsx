@@ -6,9 +6,13 @@ const Step1: React.FC = () => {
   return (
    <div className={styles.slideContainer}>
    <div className={styles.block2}>
-     <h2>Аналитика и оценка проекта</h2>
+    <div className={styles.step__heading}>
+      <div className={styles.step__number}>01</div>
+      <h2>Аналитика и оценка проекта</h2>
+    </div>
+      
      <div className={styles.block}>
-       <div className={styles.il} >Иллюстрация</div>
+       <div className={styles.illustration} >Иллюстрация</div>
        <div className={styles.textContainer}>
 
          <h4>Собираем аналитику и погружаемся

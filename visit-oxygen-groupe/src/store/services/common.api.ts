@@ -36,12 +36,12 @@ export const commonApi = createApi({
         body: userInfo,
       }),
     }),
-    captcha: build.mutation< IСaptchaRes, IСaptcha>({
-      query: (token) => ({
-        url: `/captcha`,
-        method: 'POST',
-        body: token,
-      }),
-    }),
+    // captcha: build.mutation< IСaptchaRes, IСaptcha>({
+    //   query: (token) => ({
+    //     url: `/captcha`,
+    //     method: 'POST',
+    //     body: token,
+    //   }),
+    // }),
   }),
 });

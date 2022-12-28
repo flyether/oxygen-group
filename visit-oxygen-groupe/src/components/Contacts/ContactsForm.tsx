@@ -8,26 +8,35 @@ import ReCAPTCHA from "react-google-recaptcha";
 import Loading from '../atoms/loading';
 import styles from './Contacts.module.css'
 import Error from './Error'
-// import 'dotenv/config'
+import PhoneInputWithCountry from "react-phone-number-input/react-hook-form"
+import "./index.css"
 
-// dotenv.config()
 const ContactsForm: FC = () => {
    const {
       register,
       handleSubmit,
       reset,
+      control,
       formState: { errors, isValid },
    } = useForm({
       mode: "onBlur"
    });
 
    const captchaRef = useRef<ReCAPTCHA>(null);
-
+   const [value, setValue] = useState()
    const [regUser, { error, isLoading, data: res }] = commonApi.useRegUserMutation();
    const [isModalActive, setModalActive] = useState(false);
    const [isErrorModal, setErrorModal] = useState(false);
    const [isErrorMessage, setErrorMessage] = useState('');
-   const [captcha, { error: eer1, isLoading: islod2, data: ddd }] = commonApi.useCaptchaMutation()
+   const [isCaptcha, setCaptcha] = useState(false);
+   // const [captcha, { error: eer1, isLoading: islod2, data: ddd }] = commonApi.useCaptchaMutation()
+
+   
+   const onVerifyCaptcha = (token: string | null ) => {
+      setCaptcha(true)
+    };
+
+  
    useEffect(() => {
       if (error && 'data' in error) {
          setErrorMessage(error.data.message);
@@ -48,21 +57,21 @@ const ContactsForm: FC = () => {
       }
    }, [res]);
 
+ 
    const submitForm = async (data: FieldValues) => {
-      if (captchaRef.current!.getValue()) {
-         const token: IСaptcha = { token: captchaRef.current!.getValue() as string }
-         // await captchaRef?.current?.executeAsync();
+   const  tokenQ =  captchaRef.current!.getValue() as string 
 
-
+      if (tokenQ ) {
+      
          const userData: IUser = {
             name: data.name,
             email: data.email,
             phone: data.phone,
-            description: data.description
+            description: data.description,
+            token: tokenQ
          };
          await regUser(userData).unwrap();
-         await captcha(token).unwrap();
-         console.log(ddd)
+           
          captchaRef.current!.reset();
          reset();
       }
@@ -104,6 +113,12 @@ const ContactsForm: FC = () => {
             {errors?.email && (
                <Error message={errors.email.message as string || "укажите существующую почту"} close={() => setErrorModal(false)} />
             )}
+
+    <PhoneInputWithCountry
+        name="phoneInputWithCountrySelect"
+        control={control}
+        rules={{ required: true }} />
+
             <input type="tel"
                className={styles.input + ' ' + (errors.phone ? styles.inputError : '')}
                {...register('phone', {
@@ -130,12 +145,16 @@ const ContactsForm: FC = () => {
             )}
 
             <div className={styles.divButton}>
-               <button disabled={!isValid} className={styles.button + ' ' + (isLoading ? styles.loading : '')} type="submit">{isLoading ? <Loading /> : null} Отправить</button>
+               <button disabled={!(isValid && isCaptcha)}
+                className={styles.button + ' ' + (isLoading ? styles.loading : '')} type="submit">{isLoading ? <Loading /> : null} Отправить</button>
+                <div className={styles.captchaWrapper}>
                <ReCAPTCHA
+                   className={styles.captcha}
+               onChange={onVerifyCaptcha}
                   ref={captchaRef}
                   // ref={captchaRef as React.RefObject<ReCAPTCHA >}
                   sitekey={process.env.REACT_APP_SITE_KEY as string}
-               />
+               /></div>
                <div>Нажимая кнопку
                   вы соглашаетесь на обработку
                   персональных данных</div>

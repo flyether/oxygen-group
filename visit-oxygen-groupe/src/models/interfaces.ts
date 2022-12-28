@@ -16,6 +16,7 @@ cd: string;
   email?: string | number | null;
   phone?: string | number;
   description?: string | string[];
+  token?: string;
  }
 
  export interface IСaptcha {

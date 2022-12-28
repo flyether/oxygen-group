@@ -164,7 +164,7 @@ select:-webkit-autofill:focus {
   right: 0;
   width: 231px;
   height: 61px;
-  background-color: #E95858;;
+  background-color: #E95858;
   border-radius: 10px 10px 0px 0px;
 }
 .errorMessage {
@@ -176,3 +176,12 @@ select:-webkit-autofill:focus {
   color: black;
 }
 
+.captcha{
+  transform:scale(0.77);
+  transform-origin:0 0;
+
+}
+.captchaWrapper{
+
+  
+}

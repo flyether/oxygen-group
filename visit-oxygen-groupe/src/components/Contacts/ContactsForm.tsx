@@ -88,10 +88,12 @@ const ContactsForm: FC = () => {
                })}
                onInput={() => clearErrors('name')}
                placeholder="Имя" />
-            {errors?.name && (
-              <div  className={styles.errorDiv}> {errors.name.message as string || "Укажите имя от 2 до 100 символов"} </div>
-            )}
 
+            <div className={styles.errorDivWrapper}>
+               {errors?.name && (
+                  <div className={styles.errorDiv}> {errors.name.message as string || "Укажите имя от 2 до 100 символов"} </div>
+               )}
+            </div>
             <input type="email"
                className={styles.input + ' ' + (errors.email ? styles.inputError : '')}
                {...register('email', {
@@ -102,10 +104,12 @@ const ContactsForm: FC = () => {
                })}
                onInput={() => clearErrors('email')}
                placeholder="E-mail" />
-            {errors?.email && (
-               <div  className={styles.errorDiv}>{errors.email.message as string || "Введите корректный E-mail"} </div>
-            )}
 
+            <div className={styles.errorDivWrapper}>
+               {errors?.email && (
+                  <div className={styles.errorDiv}>{errors.email.message as string || "Введите корректный E-mail"} </div>
+               )}
+            </div>
             <PhoneInput
                name="phoneInput"
                control={control}
@@ -114,19 +118,19 @@ const ContactsForm: FC = () => {
                onInput={() => clearErrors('phoneInput')}
                className={styles.input + ' ' + (errors.phone ? styles.inputError : '')}
             />
-
-            {errors?.phoneInput && (
-               <div  className={styles.errorDiv}>  {errors.phoneInput.message as string || "Телефон должен быть в формате +xxxxxxxxxxx"} </div>
-            )}
-
-            <textarea {...register('description', { required: true,  maxLength: 500 })}
-              onInput={() => clearErrors('description')}
+            <div className={styles.errorDivWrapper}>
+               {errors?.phoneInput && (
+                  <div className={styles.errorDiv}>  {errors.phoneInput.message as string || "Телефон должен быть в формате +xxxxxxxxxxx"} </div>
+               )}
+            </div>
+            <textarea {...register('description', { required: true, maxLength: 500 })}
+               onInput={() => clearErrors('description')}
                placeholder="Короткое описание проекта" />
-
-            {errors?.description && (
-               <div  className={styles.errorDiv}>  {errors.description.message as string || "дабавьте описание проекта до 500 символов"} </div>
-            )}
-
+            <div className={styles.errorDivWrapper}>
+               {errors?.description && (
+                  <div className={styles.errorDiv}>  {errors.description.message as string || "дабавьте описание проекта до 500 символов"} </div>
+               )}
+            </div>
             <div className={styles.divButton}>
                <button disabled={!isValid}
                   className={styles.button + ' ' + (isLoading ? styles.loading : '')} type="submit">{isLoading ? <Loading /> : null} Отправить</button>

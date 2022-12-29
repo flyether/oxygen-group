@@ -4,6 +4,7 @@ import styles from './steps.module.css';
 const Step1: React.FC = () => {
   return (
     <div className={styles.slideContainer}>
+      xoчу тут берюзовый див  заданной высоты и ширины
       <div className={styles.block2}>
         <h2>Аналитика и оценка проекта</h2>
         <div className={styles.block}>

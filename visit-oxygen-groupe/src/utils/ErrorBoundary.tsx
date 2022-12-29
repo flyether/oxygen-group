@@ -1,6 +1,6 @@
 
-import  { Component, ErrorInfo, ReactNode } from 'react';
-import styles from '../components/atoms/Modal/Modal.module.css';
+import { Component, ErrorInfo, ReactNode } from 'react';
+import styles from '../components/Contacts/Contacts.module.css';
 interface Props {
   children?: ReactNode;
 }
@@ -26,19 +26,18 @@ class ErrorBoundary extends Component<Props, State> {
   public render() {
     if (this.state.hasError) {
       return (
+
        
-         <div className={styles.errorModal} >
-        <div className={styles.errorMessage}>
-        <button
-                   
-                   onClick={() => this.setState({ hasError: false })}
-                 > назад </button>
-          <p>что-то пошло не так мы разбираемся</p>
+          <div className={styles.errorBoundary}>
+        
+            <h2>что-то пошло не так мы разбираемся</h2>
+            <button className={styles.divButton}
+              onClick={() => this.setState({ hasError: false })}
+            > назад </button>
         </div>
-      </div>
-                 
-            
-          
+
+
+
       );
     }
 

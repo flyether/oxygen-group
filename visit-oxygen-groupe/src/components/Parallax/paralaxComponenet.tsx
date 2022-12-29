@@ -1,11 +1,11 @@
 import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax';
 import { useRef } from 'react';
 import Contacts from "../Contacts";
-import Step1 from '../Contacts/Steps.tsx/Step1';
-import Step2 from '../Contacts/Steps.tsx/Step2';
-import Step3 from '../Contacts/Steps.tsx/Step3';
-import Step4 from '../Contacts/Steps.tsx/Step4';
-import Step5 from '../Contacts/Steps.tsx/Step5';
+import Step1 from './Steps/Step1';
+import Step2 from './Steps/Step2';
+import Step3 from './Steps/Step3';
+import Step4 from './Steps/Step4';
+import Step5 from './Steps/Step5';
 import Main from "../Main";
 import styles from './styles.module.css'
 

@@ -1,11 +1,12 @@
-import React from 'react';
-import styles from './Contacts.module.css'
+import { FC } from 'react';
+import styles from './Modal.module.css';
+
 interface Props {
   message: string;
   close: () => void;
 }
 
-const ErrorModal: React.FC<Props> = ({ message, close }) => {
+const ErrorModal: FC<Props> = ({ message, close }) => {
   return (
     <div className={styles.errorModal} onClick={close}>
       <div className={styles.errorMessage}>

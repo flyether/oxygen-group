@@ -7,7 +7,17 @@ const Navigation = () => {
       <ul className={styles.list}>
         <li className={styles.item}>
           <Link to="/contacts" className={styles.link}>
-            контакты
+            Портфолио
+          </Link>
+        </li>
+        <li className={styles.item}>
+          <Link to="/contacts" className={styles.link}>
+            Новости
+          </Link>
+        </li>
+        <li className={styles.item}>
+          <Link to="/contacts" className={styles.link}>
+            Отзывы
           </Link>
         </li>
       </ul>

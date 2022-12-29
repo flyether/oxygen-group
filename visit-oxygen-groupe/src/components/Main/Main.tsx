@@ -6,7 +6,15 @@ const Main = () => {
 
   return (
     <div className={styles.container}>
-      <h1>Тут текст с главной</h1>
+      <div className={styles.text}>
+        <h1>РАЗРАБОТКА
+      ЦИФРОВЫХ
+      РЕШЕНИЙ</h1>
+      </div>
+      <div className={styles.illustration}>
+    <p>иллюстрация</p>
+      </div>
+      
 
     </div>
   );

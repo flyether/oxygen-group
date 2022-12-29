@@ -1,6 +1,5 @@
 import React from 'react';
-import styles from './steps.module.css'
-
+import styles from './steps.module.css';
 
 const Step2: React.FC = () => {
   return (
@@ -10,7 +9,6 @@ const Step2: React.FC = () => {
       <div className={styles.block}>
         <div className={styles.il} >Иллюстрация</div>
         <div className={styles.textContainer}>
-
           <h4>Начинаем с проработки внутренней логики - создаем майндмэп.
             После переносим ее в черно-белый макет для согласования логики.
             <br />

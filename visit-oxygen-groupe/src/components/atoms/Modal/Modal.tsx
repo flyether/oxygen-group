@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import styles from './Modal.module.css';
 
 
@@ -9,7 +9,7 @@ import styles from './Modal.module.css';
   
   const Modal: FC<Props> = ({ message, close }) => {
     return (
-      <div className={styles.errorModal} onClick={close}>
+      <div className={styles.Modal} onClick={close}>
         <div className={styles.errorMessage}>
           <p>{message}</p>
         </div>

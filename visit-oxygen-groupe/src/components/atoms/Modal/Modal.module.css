@@ -1,4 +1,4 @@
-.errorModal {
+.Modal {
   position: absolute;
   bottom: 0%;
   right: 0;
@@ -14,4 +14,14 @@
   transform: translate(-50%, -50%);
   text-align: center;
   color: black;
+}
+
+.errorModal {
+  position: absolute;
+  bottom: 0%;
+  right: 0;
+  width: 231px;
+  height: 61px;
+  background-color: #E63F02;
+  border-radius: 10px 10px 0px 0px;
 }

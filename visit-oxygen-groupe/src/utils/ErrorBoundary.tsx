@@ -27,16 +27,12 @@ class ErrorBoundary extends Component<Props, State> {
     if (this.state.hasError) {
       return (
 
-       
           <div className={styles.errorBoundary}>
-        
             <h2>что-то пошло не так мы разбираемся</h2>
             <button className={styles.divButton}
               onClick={() => this.setState({ hasError: false })}
             > назад </button>
         </div>
-
-
 
       );
     }

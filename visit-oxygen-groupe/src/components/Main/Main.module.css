@@ -1,6 +1,7 @@
 .container {
    background: rgba(119, 172, 241, 1);
    width: 100vw;
+   min-height: 700px;
    height: 100vh;
    padding: 30px;
    display: flex;

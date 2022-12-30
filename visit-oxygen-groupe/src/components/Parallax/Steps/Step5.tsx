@@ -20,12 +20,12 @@ const Step5: React.FC = () => {
     // </div>
     <div className={styles.slideContainer}>
       <div className={styles.block}>
-
-        <div className={styles.step__number}>
+         <div className={styles.step__heading}>
+          <div className={styles.step__number}>
           05
+          </div>
+          <h2>Интеграции и релиз проекта</h2>
         </div>
-
-        <h2 className={styles.step__heading}>Интеграции и релиз проекта</h2>
         <div className={styles.block__content}>
           <div className={styles.illustration} >Иллюстрация</div>
           <div className={styles.textContainer}>

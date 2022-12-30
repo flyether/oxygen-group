@@ -3,6 +3,7 @@
   background: rgba(119, 172, 241, 1);
   width: 100vw;
   height: 100vh;
+  min-height: 700px;
   justify-content: center;
 }
 
@@ -154,8 +155,8 @@ select:-webkit-autofill:focus {
 }
 
 .errorDiv{
-
   color: #E63F02; 
+  font-size: 13px;
 }
 
 .errorDivWrapper{

@@ -23,3 +23,17 @@
     padding: 15px 20px;
     border-radius: 10px;
 }
+.burger {
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/svg/burger.svg);
+}
+@media (max-width: 768px) {
+  .contacts {
+    width: 100%;
+    justify-content: space-around;
+  }
+}

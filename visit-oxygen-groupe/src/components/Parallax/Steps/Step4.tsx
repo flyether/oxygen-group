@@ -6,10 +6,12 @@ const Step4: React.FC = () => {
   return (
     <div className={styles.slideContainer}>
       <div className={styles.block}>
-        <div className={styles.step__number}>
+        <div className={styles.step__heading}>
+          <div className={styles.step__number}>
           04
+          </div>
+          <h2>Тестирование</h2>
         </div>
-        <h2 className={styles.step__heading}>Тестирование</h2>
         <div className={styles.block__content}>
           <div className={styles.illustration} >Иллюстрация</div>
           <div className={styles.textContainer}>

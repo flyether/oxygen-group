@@ -6,12 +6,12 @@ const Step3: React.FC = () => {
   return (
     <div className={styles.slideContainer}>
       <div className={styles.block}>
-
-        <div className={styles.step__number}>
+        <div className={styles.step__heading}>
+          <div className={styles.step__number}>
           03
+          </div>
+          <h2>Разработка</h2>
         </div>
-
-        <h2 className={styles.step__heading}>Разработка</h2>
         <div className={styles.block__content}>
           <div className={styles.illustration} >Иллюстрация</div>
           <div className={styles.textContainer}>

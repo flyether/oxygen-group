@@ -16,6 +16,7 @@ const Header = () => {
           Заказать разработку
         </button>
       </div>
+      <button className={`${styles.tablet} ${styles.burger}`}/>
     </header>
   );
 };

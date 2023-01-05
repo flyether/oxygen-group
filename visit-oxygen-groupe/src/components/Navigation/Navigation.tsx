@@ -4,13 +4,13 @@ import styles from './Navigation.module.css';
 const Navigation = () => {
   return (
     <nav className={styles.container}>
-      <ul className={styles.list}>
-        <li className={styles.item}>
+      <ul className={`${styles.list} ${styles.desktop}`}>
+        <li className={`${styles.hidden} ${styles.item}`}>
           <Link to="/contacts" className={styles.link}>
             Портфолио
           </Link>
         </li>
-        <li className={styles.item}>
+        <li className={`${styles.hidden} ${styles.item}`}>
           <Link to="/contacts" className={styles.link}>
             Новости
           </Link>

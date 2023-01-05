@@ -4,24 +4,28 @@ import styles from './steps.module.css'
 
 const Step3: React.FC = () => {
   return (
-    <div className={styles.block2}>
-      <h2>Разработка</h2>
+    <div className={styles.slideContainer}>
       <div className={styles.block}>
-        <div className={styles.il} >Иллюстрация</div>
-        <div className={styles.textContainer}>
-          <h4>Начинаем с проработки внутренней логики - создаем майндмэп.
-            После переносим ее в черно-белый макет для согласования логики.
-            <br />
-            Когда логика проработана, прорисовываем стили на нескольких экранах, чтобы согласовать общий вид будущего приложения.
-            <br />
-            Финализируем дизайн и после
-            отдаем в разработку.<br />
-            <ul>
-              <li> Сбор референсов</li>
-              <li>Отбор креативных идей</li>
-              <li>Дизайн концепция</li>
+        <div className={styles.step__heading}>
+          <div className={styles.step__number}>
+          03
+          </div>
+          <h2>Разработка</h2>
+        </div>
+        <div className={styles.block__content}>
+          <div className={styles.illustration} >Иллюстрация</div>
+          <div className={styles.textContainer}>
+            <p className={styles.step__paragraph}>Разработка делится на маленькие этапы, чтобы клиент мог контролировать ход работы и быстро вносить изменения.
+            </p>
+            <p className={styles.step__paragraph}>
+              Пробные релизы делаем в TestFlight и Google Play, чтобы показать как работает приложение на реальных устройствах.
+            </p>
+            <ul className={styles.step__list}>
+              <li>Frontend</li>
+              <li>Backend</li>
             </ul>
-          </h4>
+
+          </div>
         </div>
       </div>
     </div>

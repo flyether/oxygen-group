@@ -1,6 +1,7 @@
 .container {
    background: rgba(119, 172, 241, 1);
    width: 100vw;
+   min-height: 700px;
    height: 100vh;
    padding: 30px;
    display: flex;
@@ -15,9 +16,27 @@
   color: #ffff;
 }
 .illustration {
-  height: 300px;
-  width: 50%;
+  height: 400px;
+  width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #ffff;
+  border: 2px solid #ffff;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 10.938vw;
+  }
+  .text {
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 80px;
+  }
+  .illustration {
+    width: 100%;
+  }
 }

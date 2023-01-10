@@ -31,7 +31,7 @@ export const commonApi = createApi({
   endpoints: (build) => ({
     regUser: build.mutation< IUser, IUser>({
       query: (userInfo) => ({
-        url: `/requests`,
+        url: `/enquiries`,
         method: 'POST',
         body: userInfo,
       }),

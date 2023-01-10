@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/oxygen-groupe/visit-oxygen-groupe/static/css/main.28d59033.css",
+    "main.js": "/oxygen-groupe/visit-oxygen-groupe/static/js/main.0b17da28.js",
+    "static/media/logo.svg": "/oxygen-groupe/visit-oxygen-groupe/static/media/logo.b71e332890d15ef4383c1b18a3740879.svg",
+    "static/media/phone.svg": "/oxygen-groupe/visit-oxygen-groupe/static/media/phone.28358573005b008ddff8.svg",
+    "static/media/telegram.svg": "/oxygen-groupe/visit-oxygen-groupe/static/media/telegram.f5f7e5c66e418700389c.svg",
+    "static/media/mail.svg": "/oxygen-groupe/visit-oxygen-groupe/static/media/mail.3399bd6c33b9130961b9.svg",
+    "index.html": "/oxygen-groupe/visit-oxygen-groupe/index.html",
+    "static/media/burger.svg": "/oxygen-groupe/visit-oxygen-groupe/static/media/burger.7b2bc040e6eacffd0467.svg",
+    "static/media/chevron.svg": "/oxygen-groupe/visit-oxygen-groupe/static/media/chevron.8cab824e5fd871d1318e.svg",
+    "main.28d59033.css.map": "/oxygen-groupe/visit-oxygen-groupe/static/css/main.28d59033.css.map",
+    "main.0b17da28.js.map": "/oxygen-groupe/visit-oxygen-groupe/static/js/main.0b17da28.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.28d59033.css",
+    "static/js/main.0b17da28.js"
+  ]
+}

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
+
+body {
+  margin: auto;
+  font-family: 'Nunito', sans-serif;
+  background: -webkit-linear-gradient(to top, #0bcdcd, #00013a),
+    url(../assets/svg/molecules-new.svg);
+  background: -moz-linear-gradient(to top, #0bcdcd, #00013a), url(../assets/svg/molecules-new.svg);
+  background: -o-linear-gradient(to top, #0bcdcd, #00013a), url(../assets/svg/molecules-new.svg);
+  background: linear-gradient(to top, #0bcdcd, #00013a), url(../assets/svg/molecules-new.svg);
+  background-blend-mode: screen;
+  background-size: cover;
+  background-position: center 0;
+}
+
+.root {
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+/* .mobile,
+.tablet {
+    display: none;
+}
+
+.tablet.desktop {
+    display: flex;
+}
+
+@media (max-width: 1111px) {
+
+  .desktop {
+    display: none;
+  }
+  .tablet,
+  .tablet.desktop {
+        display: flex;
+    }
+}
+@media (max-width: 685px) {
+    .tablet {
+        display: none;
+    }
+    .mobile {
+        display: flex;
+    }
+}
+@media (max-width: 685px) {
+
+    .tablet,
+  .tablet.desktop {
+        display: none;
+    }
+    .mobile {
+        display: flex;
+    }
+
+} */

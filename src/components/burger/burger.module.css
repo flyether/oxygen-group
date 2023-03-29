@@ -1,0 +1,43 @@
+/* .panel {
+   display: flex;
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 50%;
+   height: 100%;
+   background-color: #00013A;;  
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+   z-index: 1;
+   padding: 20px;
+   margin: 0 auto;
+   z-index: 3;
+ }
+ .ul__panel{
+   display: flex;
+   flex-direction: column;
+   gap: 5%;
+   margin: 52% 32% 32%32%;
+   font-size: 32px;
+   font-weight: bold;
+   
+ }
+ .li__panel:hover{
+ color: rgb(192, 238, 240);
+   
+ }
+ @media (max-width: 450px) {
+   .panel {
+     width: 60%;
+   }
+ }
+ .closeButton {
+   position: absolute;
+   top: 5%;
+   right: 5%;
+   font-size: 28px;
+   font-weight: bold;
+   color:rgb(218, 211, 211);
+   background: none;
+   border: 0;
+   cursor: pointer;
+} */

@@ -1,0 +1,139 @@
+.container {
+  background: -webkit-linear-gradient(to top, #0999a7, #020f44);
+  background: -moz-linear-gradient(to top, #0999a7, #020f44);
+  background: -o-linear-gradient(to top, #0999a7, #020f44);
+  background: linear-gradient(to top, #0999a7, #020f44);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: flex-end;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  min-height: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 10vh 10% 0;
+  z-index: 3;
+}
+
+.close_btn {
+  background-color: transparent;
+  outline: none;
+  position: absolute;
+  top: 10vh;
+  z-index: 4;
+  background-image: url(../../assets/svg/cross-close.svg);
+  width: 48px;
+  height: 48px;
+}
+
+.menu__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.menu__navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.menu__socials,
+.menu__contacts {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu__socials {
+  margin-top: 10vh;
+  margin-bottom: 52px;
+  gap: 23px;
+}
+
+.menu__contacts {
+  flex-direction: column;
+  gap: 24px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.nav__item {
+  padding: 20px 0;
+  width: 50%;
+  text-align: center;
+  border-bottom: 1px solid #515151;
+}
+
+.nav__last {
+  border-bottom: none;
+}
+
+.li__panel:hover {
+  color: rgb(192, 238, 240);
+}
+
+.mobile,
+.tablet {
+  display: none;
+}
+
+.tablet.desktop {
+  display: flex;
+}
+
+@media (max-width: 1111px) {
+  .desktop {
+    display: none;
+  }
+
+  .tablet,
+  .tablet.desktop {
+    display: flex;
+  }
+}
+
+@media (max-width: 685px) {
+  .tablet {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+  }
+}
+
+@media (max-width: 685px) {
+  .tablet,
+  .tablet.desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+  }
+}
+
+@media (max-width: 450px) {
+  .nav__item {
+    width: 100%;
+  }
+
+  .menu__contacts {
+    font-size: 18px;
+  }
+
+  .menu__navigation {
+    font-size: 24px;
+  }
+}

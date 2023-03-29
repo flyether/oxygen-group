@@ -1,0 +1,25 @@
+.Modal {
+  position: relative;
+  width: 231px;
+  height: 61px;
+  background-color: #7ee958;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.errorMessage {
+  position: absolute;
+  top: 10%;
+  width: 98%;
+  height: 98%;
+  text-align: center;
+  color: black;
+}
+
+.errorModal {
+  position: relative;
+  width: 231px;
+  height: 61px;
+  background-color: #e63f02;
+  border-radius: 10px 10px 0px 0px;
+  /* font-size: 13px; */
+}

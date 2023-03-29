@@ -1,0 +1,36 @@
+.breadcrumb-not-active,
+.breadcrumb-active {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: -0.03em;
+  display: flex;
+  color: #b1b1b1;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.breadcrumb-active {
+  margin-left: 10px;
+  color: #f3f3f3;
+}
+
+.arrow {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background: url(../assets/svg/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media (max-width: 685px) {
+  .breadcrumb-not-active,
+  .breadcrumb-active {
+    font-size: 16px;
+  }
+}
